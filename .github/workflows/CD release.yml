@@ -27,7 +27,7 @@ jobs:
         env:
           SSH_USER: ${{ secrets.AZURE_SSH_USER }}
           SSH_KEY: ${{ secrets.AZURE_SSH_KEY }}
-          SSH_HOST: ${{ secrets.AZURE_SSH_HOST }}
+          SSH_HOST: ${{ secrets.AZURE_SSH_HOST_HOMOLOG }}
     
       - name: Checkout repository
         uses: actions/checkout@v3

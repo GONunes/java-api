@@ -37,6 +37,10 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
           cache: maven
+          
+      - name: Run tests and generate Jacoco report
+        run: |
+          mvn -B -f pom.xml test jacoco:prepare-agent jacoco:report
 
       - name: SonarCloud Analyze
         env:

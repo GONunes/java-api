@@ -1,5 +1,4 @@
-FROM openjdk:latest
+FROM openjdk:17-slim
 WORKDIR /api
-COPY target/java-api.jar ./java-app
-EXPOSE 8080
-CMD java -jar ./java-app/java.api.jar
+COPY target/java-api.jar .
+CMD java -jar java.api.jar

@@ -1,4 +1,4 @@
 FROM openjdk:latest
 WORKDIR /api
-COPY target/java-api.jar ./app
-CMD java -jar ./app/java-api.jar
+COPY target/java-api.jar .
+CMD java -jar java-api.jar
